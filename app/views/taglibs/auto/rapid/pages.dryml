@@ -5,7 +5,6 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
-    <nav-item with="&CodeSolution">Code Solutions</nav-item>
     <nav-item with="&CodeTest">Code Tests</nav-item>
     <nav-item with="&TestFramework">Test Frameworks</nav-item>
   </navigation>
@@ -108,6 +107,30 @@
       </section>
     </content:>
     
+  </page>
+</def>
+
+
+
+<def tag="new-for-code-test-page" polymorphic/>
+<def tag="new-for-code-test-page" for="CodeSolution">
+  <page merge title="New Code Solution for #{name :with => @code_test}">
+    
+    <body: class="new-for-owner-page  code-solution" param/>
+    
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">New Code Solution</h2>
+        <h3 param="subheading">For: <a with="&@code_test"/></h3>
+      </header>
+      
+      <section param="content-body">
+        <form owner="code_test" method="post" param>
+          <field-list: skip="code_test"/>
+          <submit: label="Create Code Solution"/>
+        </form>
+      </section>
+    </content:>
   </page>
 </def>
 

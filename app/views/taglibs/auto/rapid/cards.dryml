@@ -30,7 +30,10 @@
 <def tag="card" for="TestFramework">
   <card class="test-framework" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
+      <div param="actions">
+        <a action="edit" if="&can_edit?" param="edit-link">Edit</a>
+      </div>
     </header:>
   </card>
 </def>

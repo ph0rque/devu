@@ -1,15 +1,36 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-
-  # See ActionController::RequestForgeryProtection for details
-  # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'fd13657c7d7dc6e2615cc166935d59a2'
-  
-  # See ActionController::Base for details 
-  # Uncomment this to filter the contents of submitted sensitive data parameters
-  # from your application log (in this case, all fields with names like "password"). 
-  # filter_parameter_logging :password
+end
+
+class CodeTestsController < ApplicationController
+  hobo_model_controller
+  auto_actions :all
+end
+
+class CodeSolutionsController < ApplicationController
+  hobo_model_controller
+  auto_actions :all, :except => :index
+  auto_actions_for :code_test, [:new, :create]
+end
+
+class TestFrameworksController < ApplicationController
+  hobo_model_controller
+  auto_actions :all, :except => :show
+end
+
+class UsersController < ApplicationController
+  hobo_user_controller
+  auto_actions :all, :except => [ :index, :new, :create ]
+end
+
+class FrontController < ApplicationController
+  hobo_controller
+  def index; end
+
+  def search
+    if params[:query]
+      site_search(params[:query])
+    end
+  end
 end
