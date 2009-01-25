@@ -14,17 +14,17 @@ class CodeSolution < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.administrator?
+    acting_user.signed_up?
   end
-
+ 
   def update_permitted?
-    acting_user.administrator?
+    (acting_user.signed_up? && acting_user == self)
   end
-
+ 
   def destroy_permitted?
-    acting_user.administrator?
+    (acting_user.signed_up? && acting_user == self) || acting_user.administrator?
   end
-
+ 
   def view_permitted?(field)
     true
   end

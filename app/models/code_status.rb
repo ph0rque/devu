@@ -13,17 +13,9 @@ class CodeStatus < ActiveRecord::Base
 
   # --- Permissions --- #
 
-  def create_permitted?
-    acting_user.administrator?
-  end
-
-  def update_permitted?
-    acting_user.administrator?
-  end
-
-  def destroy_permitted?
-    acting_user.administrator?
-  end
+  def create_permitted?  ; false; end
+  def update_permitted?  ; false; end
+  def destroy_permitted? ; false; end
 
   def view_permitted?(field)
     true
