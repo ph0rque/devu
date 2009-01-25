@@ -1,5 +1,41 @@
 <!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
 
+<def tag="form" for="CodeSolution">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="title, code, code_test" param/>
+    <div param="actions">
+      <submit label="Save" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="CodeTest">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="title, description, number_of_tests, published, user" param/>
+    <div param="actions">
+      <submit label="Save" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="TestFramework">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, code_test" param/>
+    <div param="actions">
+      <submit label="Save" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
 <def tag="form" for="User">
   <form merge param="default">
     <error-messages param/>

@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   # Just remove it if you don't want that
   before_create { |user| user.administrator = true if count == 0 }
   
+  has_many :code_tests
+  has_many :code_solutions
   
   # --- Signup lifecycle --- #
 

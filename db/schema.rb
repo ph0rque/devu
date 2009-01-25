@@ -9,7 +9,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090124201057) do
+ActiveRecord::Schema.define(:version => 20090125180345) do
+
+  create_table "code_solutions", :force => true do |t|
+    t.string   "title"
+    t.text     "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "code_test_id"
+  end
+
+  create_table "code_statuses", :force => true do |t|
+    t.integer  "tests_passed"
+    t.integer  "memory_used"
+    t.decimal  "speed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "code_solution_id"
+  end
+
+  create_table "code_tests", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "number_of_tests"
+    t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "test_frameworks", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "code_test_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "crypted_password",          :limit => 40
