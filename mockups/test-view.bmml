@@ -1,0 +1,80 @@
+<mockup version="1.0" skin="sketch">
+  <controls>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::Paragraph" x="146" y="479" w="640" h="166" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>class%20Numberz%0A%20%0A%20%20def%20sumz%28*args%29%0A%20%20%20%20for%20x%20in%20args%0A%20%20%20%20%20%20results%20+%3D%20x%0A%20%20%20%20end%0A%20%20end%0Aend</text>
+      </controlProperties>
+    </control>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::HRule" x="146" y="474" w="640" h="-1" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::Canvas" x="129" y="210" w="673" h="170" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::Paragraph" x="129" y="210" w="669" h="166" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>describe%20Numberz%20do%0A%20%20%20before%28%3Aeach%29%20do%0A%20%20%20%20@numberz%20%3D%20Numberz.new%0A%20%20end%0A%20%20it%20%22should%20add%20properly%22%20do%0A%20%20%20%20@numberz.sumz%28%5B2%2C%202%5D%29.should%20%3D%3D%204%0A%20%20end%0Aend</text>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::Label" x="146" y="449" w="-1" h="-1" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="133" controlTypeID="com.balsamiq.mockups::Label" x="660" y="449" w="125" h="30" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>Author%3A%20Moe%20User</text>
+      </controlProperties>
+    </control>
+    <control controlID="134" controlTypeID="com.balsamiq.mockups::Button" x="144" y="645" w="-1" h="-1" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Run%20this%20code%20with%20the%20Test</text>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="7" y="11" w="948" h="894" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>moe.edu</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Canvas" x="114" y="108" w="703" h="758" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::Label" x="129" y="142" w="-1" h="-1" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::Label" x="683" y="142" w="-1" h="-1" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>Framework%3A%20Rspec</text>
+      </controlProperties>
+    </control>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::Paragraph" x="129" y="167" w="673" h="28" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>This%20test%20tests%20code%20for%20adding%20numbers%20properly.</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::FieldSet" x="129" y="424" w="673" h="419" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Code%20snippets%20for%20this%20Test</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::Button" x="129" y="389" w="-1" h="-1" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Run%20this%20Test</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::Link" x="601" y="392" w="-1" h="-1" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>write%20a%20new%20code%20for%20this%20test</text>
+      </controlProperties>
+    </control>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::Label" x="685" y="167" w="117" h="30" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>Author%3A%20Joe%20User</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

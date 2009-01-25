@@ -1,0 +1,201 @@
+<mockup version="1.0" skin="sketch">
+  <controls>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="234" y="289" w="-1" h="-1" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <size>16</size>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="314" w="673" h="28" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>This%20test%20tests%20code%20for%20adding%20numbers%20properly.</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="333" w="673" h="28" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <color>0</color>
+        <size>10</size>
+        <text>Written%20by%20Joe%20User%20on%20Jan%2012%2C%202009%20using%20the%20RSpec%20framework.</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="837" y="285" w="-1" h="-1" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20Solutions</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="850" y="307" w="-1" h="-1" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>10%20Votes</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Label" x="850" y="331" w="-1" h="-1" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>21%20Views</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::HRule" x="234" y="360" w="677" h="-1" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Label" x="234" y="375" w="-1" h="-1" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <size>16</size>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="400" w="673" h="28" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>This%20test%20tests%20code%20for%20adding%20numbers%20properly.</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="419" w="673" h="28" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <color>0</color>
+        <size>10</size>
+        <text>Written%20by%20Joe%20User%20on%20Jan%2012%2C%202009%20using%20the%20RSpec%20framework.</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::Label" x="837" y="371" w="-1" h="-1" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20Solutions</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::Label" x="850" y="393" w="-1" h="-1" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>10%20Votes</text>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Label" x="850" y="417" w="-1" h="-1" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>21%20Views</text>
+      </controlProperties>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::HRule" x="234" y="446" w="677" h="-1" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Label" x="234" y="463" w="-1" h="-1" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <size>16</size>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="112" y="2" w="948" h="577" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>moe.edu</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Label" x="837" y="459" w="-1" h="-1" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20Solutions</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="234" y="201" w="-1" h="-1" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <size>16</size>
+        <text>Test%20for%20Numbers</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="226" w="673" h="28" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>This%20test%20tests%20code%20for%20adding%20numbers%20properly.</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::HRule" x="234" y="534" w="677" h="-1" zOrder="35" locked="false" isInGroup="-1"/>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::CallOut" x="922" y="254" w="130" h="58" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>votes%20not%20in%20v1.0</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::Arrow" x="916" y="230" w="71" h="31" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="488" w="673" h="28" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <text>This%20test%20tests%20code%20for%20adding%20numbers%20properly.</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="507" w="673" h="28" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <color>0</color>
+        <size>10</size>
+        <text>Written%20by%20Joe%20User%20on%20Jan%2012%2C%202009%20using%20the%20RSpec%20framework.</text>
+      </controlProperties>
+    </control>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Label" x="850" y="481" w="-1" h="-1" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>10%20Votes</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::Label" x="850" y="505" w="-1" h="-1" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>21%20Views</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Canvas" x="219" y="71" w="707" h="62" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Label" x="219" y="71" w="707" h="62" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>40</size>
+        <text>Homepage</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::CallOut" x="112" y="122" w="107" h="59" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>only%20this%20tab%20in%20v1.0</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Arrow" x="212" y="127" w="51" h="30" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="245" w="673" h="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <color>0</color>
+        <size>10</size>
+        <text>Written%20by%20Joe%20User%20on%20Jan%2012%2C%202009%20using%20the%20RSpec%20framework.</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Link" x="788" y="155" w="-1" h="-1" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Create%20a%20New%20Test</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::TabBar" x="219" y="155" w="707" h="399" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Recent%2CHot%2CEasy%2CHard%2CUnsolved</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Canvas" x="242" y="178" w="55" h="10" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="837" y="197" w="-1" h="-1" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20Solutions</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Label" x="850" y="219" w="-1" h="-1" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>10%20Votes</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Label" x="850" y="243" w="-1" h="-1" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>21%20Views</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::HRule" x="234" y="272" w="677" h="-1" zOrder="14" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
