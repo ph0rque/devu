@@ -5,6 +5,7 @@ class CodeTest < ActiveRecord::Base
   fields do
     title           :string
     description     :text
+    test_body       :text
     number_of_tests :integer
     published       :boolean
     timestamps
