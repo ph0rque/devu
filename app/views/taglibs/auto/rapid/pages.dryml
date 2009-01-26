@@ -204,7 +204,7 @@
     
           <section param="content-body">
             <view:description param="description"/>
-            <field-list fields="number_of_tests, user" param/>
+            <field-list fields="test_body, number_of_tests, user" param/>
           </section>
     </content:>
     

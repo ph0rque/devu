@@ -15,7 +15,7 @@
 <def tag="form" for="CodeTest">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="title, description, number_of_tests, published, user" param/>
+    <field-list fields="title, description, test_body, number_of_tests, published, user" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>
