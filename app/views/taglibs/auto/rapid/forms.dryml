@@ -3,7 +3,7 @@
 <def tag="form" for="CodeSolution">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="title, code, code_test" param/>
+    <field-list fields="title, code, code_test, user" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>

@@ -10,14 +10,14 @@
     </control>
     <control controlID="15" controlTypeID="com.balsamiq.mockups::Canvas" x="124" y="64" w="99" h="70" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <borderStyle>none</borderStyle>
         <color>8421504</color>
+        <borderStyle>none</borderStyle>
       </controlProperties>
     </control>
     <control controlID="16" controlTypeID="com.balsamiq.mockups::Canvas" x="238" y="171" w="99" h="70" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <borderStyle>none</borderStyle>
         <color>8421504</color>
+        <borderStyle>none</borderStyle>
       </controlProperties>
     </control>
     <control controlID="17" controlTypeID="com.balsamiq.mockups::Paragraph" x="124" y="64" w="99" h="70" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
@@ -73,8 +73,8 @@
     </control>
     <control controlID="27" controlTypeID="com.balsamiq.mockups::Arrow" x="165" y="130" w="73" h="41" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>8421504</color>
         <leftArrow>false</leftArrow>
+        <color>8421504</color>
       </controlProperties>
     </control>
     <control controlID="28" controlTypeID="com.balsamiq.mockups::Arrow" x="169" y="286" w="69" h="30" measuredW="150" measuredH="100" zOrder="15" locked="false" isInGroup="-1">
@@ -106,13 +106,14 @@
     </control>
     <control controlID="33" controlTypeID="com.balsamiq.mockups::Paragraph" x="10" y="523" w="327" h="88" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>1.%20License%3A%20MITonly%3B%20perhaps%20other%20licenses%20post%201.0%0A2.%20Versioning%3A%20tests%20publishable%3B%20after%20publishing%2C%20editing%20a%20test%20clones%20it%20and%20edits%20the%20new%20version.</text>
+        <text>1.%20License%3A%20MITonly%3B%20perhaps%20other%20licenses%20post%20v1.0%0A2.%20Versioning%3A%20tests%20publishable%3B%20after%20publishing%2C%20editing%20a%20test%20clones%20it%20and%20edits%20the%20new%20version.</text>
+        <size>12</size>
       </controlProperties>
     </control>
     <control controlID="35" controlTypeID="com.balsamiq.mockups::Canvas" x="10" y="65" w="99" h="70" measuredW="100" measuredH="70" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
-        <borderStyle>square</borderStyle>
         <color>16777215</color>
+        <borderStyle>square</borderStyle>
       </controlProperties>
     </control>
     <control controlID="36" controlTypeID="com.balsamiq.mockups::Paragraph" x="10" y="65" w="99" h="70" measuredW="200" measuredH="140" zOrder="22" locked="false" isInGroup="-1">
@@ -125,25 +126,25 @@
     </control>
     <control controlID="37" controlTypeID="com.balsamiq.mockups::Arrow" x="51" y="131" w="73" h="38" measuredW="150" measuredH="100" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>0</color>
         <leftArrow>false</leftArrow>
+        <color>0</color>
       </controlProperties>
     </control>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Arrow" x="51" y="132" w="73" h="178" measuredW="150" measuredH="100" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
-        <direction>top</direction>
         <leftArrow>false</leftArrow>
+        <direction>top</direction>
       </controlProperties>
     </control>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="103" y="93" w="21" h="10" measuredW="150" measuredH="100" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
+        <leftArrow>false</leftArrow>
         <direction>bottom</direction>
         <color>8421504</color>
         <rightArrow>true</rightArrow>
-        <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::DataGrid" x="347" y="68" w="-1" h="-1" measuredW="577" measuredH="148" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::DataGrid" x="347" y="68" w="-1" h="-1" measuredW="571" measuredH="148" zOrder="26" locked="false" isInGroup="-1">
       <controlProperties>
         <text>%2Cindex%2Cshow%2Cnew/create%2Cedit/update%2Cdelete%0ACodeTest%2Cyes%20mockup%2Cyes%20mockup%2Cyes%20default%2Cyes%20default%2Cyes%20default%0ACodeSolution%20%5B1%5D%2Cno%2Cyes%5B2%5D%2Cyes%5B3%5D%2Cyes%5B3%5D%2Cyes%20default%0ATestFramework%2Cyes%20default%2Cno%2Cyes%20default%2Cyes%20default%2Cyes%20default%0AUser%2Cno%2Cyes%20default%2Cyes%20default%2Cyes%20default%2Cyes%20default</text>
       </controlProperties>

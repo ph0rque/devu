@@ -9,6 +9,7 @@ class CodeSolution < ActiveRecord::Base
   end
 
   belongs_to :code_test
+  belongs_to :user
   has_many   :code_statuses, :dependent => :destroy
 
   # --- Permissions --- #

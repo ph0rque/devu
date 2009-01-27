@@ -78,7 +78,7 @@
           </header>
     
           <section param="content-body">
-            <field-list fields="code, code_test" param/>
+            <field-list fields="code, code_test, user" param/>
             <section param="collection-section">
               <h3 param="collection-heading">Code Statuses</h3>
               
