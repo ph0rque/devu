@@ -110,6 +110,32 @@
   </page>
 </def>
 
+<def tag="index-for-code-test-page" polymorphic/>
+<def tag="index-for-code-test-page" for="CodeSolution">
+  <page merge title="Code Solutions for #{name :with => @code_test, :no_wrapper => true}">
+    <body: class="index-for-owner-page code-test code-solution" param/>
+    
+    <content: param>
+      <header param="content-header">
+        <div param="back-to">Back to <a with="&@code_test"/></div>
+        <h2 param="heading">Code Solutions</h2>
+        <h3 param="subheading">For: <a with="&@code_test"/></h3>
+        <p param="count" if>There <count prefix="are"/></p>
+      </header>
+      
+      <section param="content-body">
+
+        <a action="new" to="&model" param="new-link"/>
+
+        <page-nav param="top-page-nav"/>
+      
+        <collection param/>
+      
+        <page-nav param="bottom-page-nav"/>
+      </section>
+    </content:>
+  </page>
+</def>
 
 
 <def tag="new-for-code-test-page" polymorphic/>

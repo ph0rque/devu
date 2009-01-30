@@ -11,7 +11,7 @@ end
 class CodeSolutionsController < ApplicationController
   hobo_model_controller
   auto_actions :all, :except => :index
-  auto_actions_for :code_test, [:new, :create]
+  auto_actions_for :code_test, [:index, :new, :create]
 end
 
 class TestFrameworksController < ApplicationController
