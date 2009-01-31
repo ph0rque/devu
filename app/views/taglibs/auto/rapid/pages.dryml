@@ -235,6 +235,13 @@
           <section param="content-body">
             <view:description param="description"/>
             <field-list fields="test_body, number_of_tests" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">Code Solutions</h3>
+              
+              <collection:code_solutions param/>
+
+              <a:code_solutions action="new" if="&can_create?(@code_test.code_solutions)" param="new-link">New Code Solution</a>
+            </section>
           </section>
     </content:>
     

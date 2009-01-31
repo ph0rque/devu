@@ -27,6 +27,7 @@
     </header:>
     <body: param>
       <a:user param="creator-link"/>
+      <count:code_solutions param/>
     </body:>
   </card>
 </def>
