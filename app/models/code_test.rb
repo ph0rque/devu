@@ -5,7 +5,7 @@ class CodeTest < ActiveRecord::Base
   fields do
     title           :string
     description     :text
-    test_body       :text #change to :markdown
+    test_body       :text #TODO change to :markdown
     number_of_tests :integer
     published       :boolean
     timestamps
@@ -13,7 +13,7 @@ class CodeTest < ActiveRecord::Base
 
   belongs_to :user, :creator => true
   belongs_to :test_framework
-  has_many   :code_solutions
+  has_many   :code_solutions, :dependent => :destroy #TODO remove before deployment
 
   # --- Permissions --- #
 

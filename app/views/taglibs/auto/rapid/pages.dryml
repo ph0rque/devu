@@ -70,6 +70,7 @@
 
     <content: param>
           <header param="content-header">
+            <a:code_test param="parent-link">&laquo; <name/></a>
             <h2 param="heading"><name/></h2>
 
             <record-flags fields="" param/>
@@ -80,7 +81,7 @@
           </header>
     
           <section param="content-body">
-            <field-list fields="code, code_test" param/>
+            <field-list fields="code" param/>
             <section param="collection-section">
               <h3 param="collection-heading">Code Statuses</h3>
               
