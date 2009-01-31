@@ -74,11 +74,13 @@
 
             <record-flags fields="" param/>
 
+            <a:code_test param="creator-link"/>
+
             <a action="edit" if="&can_edit?" param="edit-link">Edit Code Solution</a>
           </header>
     
           <section param="content-body">
-            <field-list fields="code, code_test, user" param/>
+            <field-list fields="code, user" param/>
             <section param="collection-section">
               <h3 param="collection-heading">Code Statuses</h3>
               
@@ -225,12 +227,14 @@
 
             <record-flags fields="published" param/>
 
+            <a:user param="creator-link"/>
+
             <a action="edit" if="&can_edit?" param="edit-link">Edit Code Test</a>
           </header>
     
           <section param="content-body">
             <view:description param="description"/>
-            <field-list fields="test_body, number_of_tests, user" param/>
+            <field-list fields="test_body, number_of_tests" param/>
           </section>
     </content:>
     

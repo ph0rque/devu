@@ -5,13 +5,13 @@ class CodeTest < ActiveRecord::Base
   fields do
     title           :string
     description     :text
-    test_body       :text
+    test_body       :text #change to :markdown
     number_of_tests :integer
     published       :boolean
     timestamps
   end
 
-  belongs_to :user
+  belongs_to :user, :creator => true
   has_many   :code_solutions
   has_many   :test_frameworks
 

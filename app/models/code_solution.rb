@@ -4,11 +4,11 @@ class CodeSolution < ActiveRecord::Base
 
   fields do
     title :string
-    code  :text
+    code  :text #change to :markdown
     timestamps
   end
 
-  belongs_to :code_test
+  belongs_to :code_test, :creator => true
   belongs_to :user
   has_many   :code_statuses, :dependent => :destroy
 

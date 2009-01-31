@@ -6,6 +6,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
+      <a:code_test param="creator-link"/>
       <count:code_statuses param/>
     </body:>
   </card>
@@ -24,6 +25,9 @@
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
+    <body: param>
+      <a:user param="creator-link"/>
+    </body:>
   </card>
 </def>
 
