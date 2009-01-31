@@ -7,9 +7,9 @@ class CodeSolution < ActiveRecord::Base
     code  :text #change to :markdown
     timestamps
   end
-
-  belongs_to :code_test, :creator => true
-  belongs_to :user
+  
+  belongs_to :user, :creator => true
+  belongs_to :code_test
   has_many   :code_statuses, :dependent => :destroy
 
   # --- Permissions --- #

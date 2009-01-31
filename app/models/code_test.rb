@@ -12,8 +12,8 @@ class CodeTest < ActiveRecord::Base
   end
 
   belongs_to :user, :creator => true
+  belongs_to :test_framework
   has_many   :code_solutions
-  has_many   :test_frameworks
 
   # --- Permissions --- #
 

@@ -6,7 +6,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <a:code_test param="creator-link"/>
+      <a:user param="creator-link"/>
       <count:code_statuses param/>
     </body:>
   </card>

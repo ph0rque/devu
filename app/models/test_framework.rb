@@ -7,7 +7,7 @@ class TestFramework < ActiveRecord::Base
     timestamps
   end
 
-  belongs_to :code_test
+  has_many :code_tests
 
   # --- Permissions --- #
 
