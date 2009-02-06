@@ -6,7 +6,7 @@ class CodeTest < ActiveRecord::Base
     title           :string
     description     :text
     test_body       :text #TODO change to :markdown
-    number_of_tests :integer
+  # number_of_tests :integer don't need this with hobo
     published       :boolean
     timestamps
   end
