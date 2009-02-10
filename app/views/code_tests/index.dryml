@@ -1,0 +1,40 @@
+<index-page>
+  <content-body:>
+     <a class="new-link" action="new" to="&model">New Code Test</a> <!-- new-link: -->
+    <br class="clear-both" />
+    <collection />
+  </content-body:>
+</index-page>
+  
+<!-- def tag="card" for="CodeTest">
+  <card class="code-test" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <a:user param="creator-link"/>
+      <count:code_solutions param/>
+    </body:>
+  </card>
+</def -->
+  
+<!-- def tag="index-page" for="CodeTest">
+  <page merge title="Code Tests">
+    <body: class="index-page code-test" param/>
+    
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">Code Tests</h2> 
+        <p param="count" if>There <count prefix="are"/></p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link"/>      
+        <page-nav param="top-page-nav"/>
+        <collection param/>
+        <page-nav param="bottom-page-nav"/>
+  
+      </section>
+    </content:>
+  </page>
+</def -->

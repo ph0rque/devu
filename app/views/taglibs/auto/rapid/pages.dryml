@@ -235,7 +235,7 @@
     
           <section param="content-body">
             <view:description param="description"/>
-            <field-list fields="test_body, number_of_tests, test_framework" param/>
+            <field-list fields="test_body, test_framework" param/>
             <section param="collection-section">
               <h3 param="collection-heading">Code Solutions</h3>
               

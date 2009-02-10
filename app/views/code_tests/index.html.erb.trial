@@ -1,8 +1,0 @@
-<% for code_test in @code_tests %>
-  <hr/>
-  <h1><%= code_test.title %></h1>
-  <p><%= code_test.description %></p>
-  <italic><%= "Written by #{code_test.user} on #{code_test.updated_at.to_s} using the #{code_test.test_framework} framework." %></italic>
-<% end %>
-  
-<hr/>
