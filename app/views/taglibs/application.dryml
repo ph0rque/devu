@@ -7,3 +7,17 @@
 <set-theme name="clean"/>
 
 <def tag="app-name">DevU</def>
+
+<extend tag="card" for="CodeTest">
+  <old-card merge>
+    <div class="float-right">
+      <count:code_solutions param /><br/>
+        X views<br/>
+        Y votes<br/>
+      </div>
+      <h4><a><name/></a></h4>
+      <small><i>
+        Written by <a:user param="creator-link"/> on #{@code_test.published-at} using the #{@code_test.framework.name} framework.
+      </i></small>
+  </old-card>
+</extend>
