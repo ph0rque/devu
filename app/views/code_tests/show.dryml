@@ -1,0 +1,27 @@
+<show-page>
+  <content-header:>
+    <div class="float-right">
+      <!-- edit-link: / -->  <a action="edit" if="&can_edit?">Edit Code Test</a> |
+      <!-- delete-link: / --><a method="delete" if="&can_edit?">Delete Code Test</a>
+    </div><br />
+    <h2><name /></h2><br />
+    <b><a:description /></b><br />
+    <small><i>
+      Written by <a:user /> on <a:updated_at.to_date /> using the <a:test_framework /> framework.
+    </i></small>
+  </content-header:>
+    
+  <content-body:>
+    <div class="test-code">
+      <a:test_body />
+    </div>
+    <br />
+    <div class="float-right"><a:code_solutions action="new" if="&can_create?(@code_test.code_solutions)">
+      write a new code solution for this test
+    </a></div>
+    <button>Run This Test By Itself</button>
+    
+    <h3>Code Solutions for This Test</h3>
+    <collection:code_solutions />
+  </content-body:>
+</show-page>

@@ -12,12 +12,23 @@
   <old-card merge>
     <div class="float-right">
       <count:code_solutions param /><br/>
-        X views<br/>
-        Y votes<br/>
       </div>
       <h4><a><name/></a></h4>
+      <b><a:description /></b><br />
       <small><i>
-        Written by <a:user param="creator-link"/> on #{@code_test.published-at} using the #{@code_test.framework.name} framework.
+        Written by <a:user /> on <a:updated_at.to_date /> using the <a:test_framework /> framework.
       </i></small>
+  </old-card>
+</extend>
+
+<extend tag="card" for="CodeSolution">
+  <old-card merge>
+    <header:>
+      <b><a><name/></a></b> <i>by <a:user /> on <a:updated_at.to_date /></i>
+    </header:>
+    <body:>
+      <div class="test-solution"><a:code /></div>
+      <button>Run Test with This Solution</button>
+    </body:>
   </old-card>
 </extend>
