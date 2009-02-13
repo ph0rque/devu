@@ -5,7 +5,7 @@ class CodeTest < ActiveRecord::Base
   fields do
     title           :string
     description     :text
-    test_body       :text #TODO change to :markdown
+    test_body       :text
   # number_of_tests :integer don't need this with hobo
     published       :boolean
     timestamps
@@ -13,20 +13,22 @@ class CodeTest < ActiveRecord::Base
 
   belongs_to :user, :creator => true
   belongs_to :test_framework
-  has_many   :code_solutions, :dependent => :destroy #TODO remove before deployment
+  has_many   :code_solutions, :dependent => :destroy
 
+  validates_presence_of :test_framework
+  
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.signed_up?
+    user_is?(acting_user)
   end
 
   def update_permitted?
-    (acting_user.signed_up? && acting_user == self.user) || acting_user.administrator?
+    !test_framework_changed? && ((user_is?(acting_user) && published == false) || acting_user.administrator?)
   end
 
   def destroy_permitted?
-    (acting_user.signed_up? && acting_user == self.user) || acting_user.administrator?
+    acting_user.administrator?
   end
 
   def view_permitted?(field)

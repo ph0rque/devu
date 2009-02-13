@@ -34,7 +34,6 @@ class User < ActiveRecord::Base
                :update => [ :password, :password_confirmation ]
 
   end
-  
 
   # --- Permissions --- #
 

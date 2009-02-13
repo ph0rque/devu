@@ -4,5 +4,5 @@
 
 /* specific to this app */
 .code-test-section {background:#F5F5F5; border:1px solid #3F606E; padding:12px;}
-.code-solution-section {margin:12px 0;}
+.code-solution-section {background:#f5f5f5; margin:12px 0; border:1px solid #e8e8e8; padding:12px;}
 .new-code_test-link {margin:0; float:right;}

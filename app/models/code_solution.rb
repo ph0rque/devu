@@ -4,7 +4,7 @@ class CodeSolution < ActiveRecord::Base
 
   fields do
     title :string
-    code  :text #change to :markdown
+    code  :text
     timestamps
   end
   
@@ -15,15 +15,16 @@ class CodeSolution < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.signed_up?
+    user_is?(acting_user)
   end
  
   def update_permitted?
-    (acting_user.signed_up? && acting_user == self.user) || acting_user.administrator?
+    (user_is?(acting_user) || acting_user.administrator?) && !code_test_changed?
+
   end
  
   def destroy_permitted?
-    (acting_user.signed_up? && acting_user == self.user) || acting_user.administrator?
+    (acting_user.signed_up? && user_is?(acting_user)) || acting_user.administrator?
   end
  
   def view_permitted?(field)

@@ -21,7 +21,9 @@
 
     <h2><view:title /></h2>
     <i>by <a:user /> on <view:updated_at.to_date /></i>
-    <div class="code-solution-section"><pre><view:code no-wrapper/></pre></div>
+    <div class="code-solution-section">
+      <pre><view:code no-wrapper/></pre>
+    </div>
     <button>Run Test with This Solution</button>
   </content-body:>
 </show-page>
