@@ -1,26 +1,27 @@
 <show-page>
   <content-header:>
     <h3><a:code_test /></h3><br />
-    <b><view with="&this.code_test.description" /></b><br />
+    <b><view:code_test.description /></b><br />
     <small><i>
-      Written by <a:code_test.user /> on <view with="&this.code_test.updated_at.to_date" />
-      using the <view with="&this.code_test.test_framework" /> framework.
+      Written by <a:code_test.user /> on <view:code_test.updated_at.to_date />
+      using the <view:code_test.test_framework /> framework.
     </i></small>
   </content-header:>
     
   <content-body:>
-    <div class="test-code">
-      <pre><view with="&this.code_test.test_body" /></pre>
+    <div class="code-test-section">
+      <pre><view:code_test.test_body no-wrapper/></pre>
     </div>
     <br />
     <button>Run This Test By Itself</button>
 
     <div class="float-right">
       <a action="edit" if="&can_edit?">Edit Code Solution</a>
-    </div><br />    
-    <h2><view with="&this.title" /></h2>
-    <i>by <a:user /> on <view with="&this.updated_at.to_date" /></i>
-    <div class="test-solution"><pre><view with="&this.code" /></pre></div>
+    </div><br />
+
+    <h2><view:title /></h2>
+    <i>by <a:user /> on <view:updated_at.to_date /></i>
+    <div class="code-solution-section"><pre><view:code no-wrapper/></pre></div>
     <button>Run Test with This Solution</button>
   </content-body:>
 </show-page>

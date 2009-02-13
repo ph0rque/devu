@@ -1,6 +1,6 @@
 <index-page>
   <content-body:>
-    <a class="new-link" action="new" to="&model">New Code Test</a>
+    <a class="new-link" action="new" to="&model" />
     <br class="clear-both" />
     <collection />
   </content-body:>

@@ -3,16 +3,16 @@
     <div class="float-right">
       <a action="edit" if="&can_edit?">Edit Code Test</a>
     </div><br />
-    <h2><name /></h2><br />
-    <b><view with="&this.description" /></b><br />
+    <h2><view:title /></h2><br />
+    <b><view:description /></b><br />
     <small><i>
-      Written by <a:user /> on <view with="&this.updated_at.to_date" /> using the <view with="&this.test_framework" /> framework.
+      Written by <a:user /> on <view:updated_at.to_date /> using the <view:test_framework /> framework.
     </i></small>
   </content-header:>
     
   <content-body:>
-    <div class="test-code">
-      <pre><view with="&this.test_body" /></pre>
+    <div class="code-test-section">
+      <pre><view:test_body no-wrapper/></pre>
     </div>
     <br />
     <div class="float-right"><a:code_solutions action="new" if="&can_create?(@code_test.code_solutions)">

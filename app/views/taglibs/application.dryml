@@ -14,9 +14,9 @@
       <count:code_solutions param /><br/>
       </div>
       <h4><a><name/></a></h4>
-      <b><view with="&this.description" /></b><br />
+      <b><view:description /></b><br />
       <small><i>
-        Written by <a:user /> on <view with="&this.updated_at.to_date" /> using the <view with="&this.test_framework" /> framework.
+        Written by <a:user /> on <view:updated_at.to_date /> using the <view:test_framework /> framework.
       </i></small>
   </old-card>
 </extend>
@@ -24,10 +24,10 @@
 <extend tag="card" for="CodeSolution">
   <old-card merge>
     <header:>
-      <b><a><name/></a></b> <i>by <a:user /> on <view with="&this.updated_at.to_date" /></i>
+      <b><a><name/></a></b> <i>by <a:user /> on <view:updated_at.to_date /></i>
     </header:>
     <body:>
-      <div class="test-solution"><pre><view with="&this.code" /></pre></div>
+      <div class="code-solution"><pre><view:code no-wrapper/></pre></div>
       <button>Run Test with This Solution</button>
     </body:>
   </old-card>
