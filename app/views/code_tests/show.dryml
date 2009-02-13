@@ -12,7 +12,7 @@
     
   <content-body:>
     <div class="test-code">
-      <view with="&this.test_body" />
+      <pre><view with="&this.test_body" /></pre>
     </div>
     <br />
     <div class="float-right"><a:code_solutions action="new" if="&can_create?(@code_test.code_solutions)">

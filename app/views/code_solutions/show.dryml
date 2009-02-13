@@ -10,7 +10,7 @@
     
   <content-body:>
     <div class="test-code">
-      <view with="&this.code_test.test_body" />
+      <pre><view with="&this.code_test.test_body" /></pre>
     </div>
     <br />
     <button>Run This Test By Itself</button>
@@ -20,7 +20,7 @@
     </div><br />    
     <h2><view with="&this.title" /></h2>
     <i>by <a:user /> on <view with="&this.updated_at.to_date" /></i>
-    <div class="test-solution"><view with="&this.code" /></div>
+    <div class="test-solution"><pre><view with="&this.code" /></pre></div>
     <button>Run Test with This Solution</button>
   </content-body:>
 </show-page>

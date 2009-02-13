@@ -27,7 +27,7 @@
       <b><a><name/></a></b> <i>by <a:user /> on <view with="&this.updated_at.to_date" /></i>
     </header:>
     <body:>
-      <div class="test-solution"><view with="&this.code" /></div>
+      <div class="test-solution"><pre><view with="&this.code" /></pre></div>
       <button>Run Test with This Solution</button>
     </body:>
   </old-card>
