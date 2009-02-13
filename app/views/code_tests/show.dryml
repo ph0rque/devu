@@ -1,7 +1,7 @@
 <show-page>
   <content-header:>
     <div class="float-right">
-      <!-- edit-link: / -->  <a action="edit" if="&can_edit?">Edit Code Test</a>
+      <a action="edit" if="&can_edit?">Edit Code Test</a>
     </div><br />
     <h2><name /></h2><br />
     <b><view with="&this.description" /></b><br />
