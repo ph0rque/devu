@@ -8,6 +8,10 @@
 
 <def tag="app-name">DevU</def>
 
+<def tag="codeview">
+  <div class="code"><pre><%= h(this) -%></pre></div>
+</def>
+  
 <extend tag="card" for="CodeTest">
   <old-card merge>
     <div class="float-right">
@@ -27,7 +31,7 @@
       <b><a><name/></a></b> <i>by <a:user /> on <view:updated_at.to_date /></i>
     </header:>
     <body:>
-      <div class="code-solution"><pre><view:code no-wrapper/></pre></div>
+      <div class="code-solution-in-card"><codeview:code /></div>
       <button>Run Test with This Solution</button>
     </body:>
   </old-card>
