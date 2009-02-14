@@ -31,4 +31,31 @@ class CodeSolution < ActiveRecord::Base
     true
   end
 
+  def execute
+    # Create directories if they don't exist for: rails_root / test_execution / id /
+    FileUtils.mkdir_p "#{RAILS_ROOT}/test_execution/#{self.id}"
+    
+    # Write the test body to a file in: rails_root / test_execution / id / test.rb
+    test_file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/test.rb", "w") 
+    solution_file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/solution.rb", "w") 
+    
+    # Dump the DB fields to the files
+    test_file.write(self.code_test.test_body)
+    solution_file.write(self.code)
+    
+    test_file.close
+    solution_file.close
+    
+    # Invoke the test.rb file with the Ruby interpreter capturing stdout and stderr
+    
+    # Delete the rails_root / test_execution / id / directory and it's contents
+    
+    # Return the output
+    cs = CodeStatus.new
+    cs.result_output = 'This should say something else'
+    cs.save!
+    return cs
+    
+  end
+  
 end

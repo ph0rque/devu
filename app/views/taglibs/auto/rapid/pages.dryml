@@ -3,8 +3,9 @@
 <!-- ====== Main Navigation ====== -->
 
 <def tag="main-nav">
-  <navigation class="main-nav" merge-attrs param="default">
+  <navigation class="main-nav" merge-attrs>
     <nav-item href="#{base_url}/">Home</nav-item>
+    <nav-item with="&CodeStatus">Code Statuses</nav-item>
     <nav-item with="&CodeTest">Code Tests</nav-item>
     <nav-item with="&TestFramework">Test Frameworks</nav-item>
   </navigation>
@@ -32,12 +33,10 @@
         <a action="new" to="&model" param="new-link"/>      
 
         <page-nav param="top-page-nav"/>
-
+      
         <collection param/>
-
+      
         <page-nav param="bottom-page-nav"/>
-
-
       </section>
     </content:>
   </page>
@@ -73,7 +72,7 @@
             <a:code_test param="parent-link">&laquo; <name/></a>
             <h2 param="heading"><name/></h2>
 
-            <record-flags fields="" param/>
+            <field-names-where-true fields="" param/>
 
             <a:user param="creator-link"/>
 
@@ -167,6 +166,101 @@
 
 
   
+<!-- ====== CodeStatus Pages ====== -->
+
+
+<def tag="index-page" for="CodeStatus">
+  <page merge title="Code Statuses">
+    <body: class="index-page code-status" param/>
+    
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">Code Statuses</h2>
+
+        <p param="count" if>There <count prefix="are"/></p>
+      </header>
+      
+      <section param="content-body">
+
+        <a action="new" to="&model" param="new-link"/>      
+
+        <page-nav param="top-page-nav"/>
+      
+        <collection param/>
+      
+        <page-nav param="bottom-page-nav"/>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="CodeStatus">
+  <page merge title="New Code Status">
+    <body: class="new-page code-status" param/>
+    
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">New Code Status</h2>
+      </section>
+      
+      <section param="content-body">
+        <form param>
+          <submit: label="Create Code Status"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="CodeStatus">
+  <page merge title="Code Status">
+
+    <body: class="show-page code-status" param/>
+
+    <content: param>
+          <header param="content-header">
+            <a:code_solution param="parent-link">&laquo; <name/></a>
+            <h2 param="heading"><name/></h2>
+
+            <field-names-where-true fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">Edit Code Status</a>
+          </header>
+    
+          <section param="content-body">
+            <field-list fields="result_output, tests_passed, memory_used, speed" param/>
+          </section>
+    </content:>
+    
+  </page>
+</def>
+
+
+<def tag="edit-page" for="CodeStatus">
+  <page merge title="Edit Code Status">
+
+    <body: class="edit-page code-status" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">Edit <type-name/></h2>
+        <delete-button label="Remove This Code Status" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+    
+  </page>
+</def>
+
+
+
+
+  
 <!-- ====== CodeTest Pages ====== -->
 
 
@@ -186,12 +280,10 @@
         <a action="new" to="&model" param="new-link"/>      
 
         <page-nav param="top-page-nav"/>
-
+      
         <collection param/>
-
+      
         <page-nav param="bottom-page-nav"/>
-
-
       </section>
     </content:>
   </page>
@@ -226,7 +318,7 @@
           <header param="content-header">
             <h2 param="heading"><name/></h2>
 
-            <record-flags fields="published" param/>
+            <field-names-where-true fields="published" param/>
 
             <a:user param="creator-link"/>
 
@@ -292,12 +384,10 @@
         <a action="new" to="&model" param="new-link"/>      
 
         <page-nav param="top-page-nav"/>
-
+      
         <collection param/>
-
+      
         <page-nav param="bottom-page-nav"/>
-
-
       </section>
     </content:>
   </page>
@@ -332,7 +422,7 @@
           <header param="content-header">
             <h2 param="heading"><name/></h2>
 
-            <record-flags fields="" param/>
+            <field-names-where-true fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">Edit Test Framework</a>
           </header>
@@ -385,12 +475,10 @@
       <section param="content-body">
 
         <page-nav param="top-page-nav"/>
-
+      
         <collection param/>
-
+      
         <page-nav param="bottom-page-nav"/>
-
-
       </section>
     </content:>
   </page>
@@ -425,7 +513,7 @@
           <header param="content-header">
             <h2 param="heading"><name/></h2>
 
-            <record-flags fields="administrator" param/>
+            <field-names-where-true fields="administrator" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">Edit User</a>
           </header>

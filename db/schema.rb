@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090131222124) do
+ActiveRecord::Schema.define(:version => 20090214145724) do
 
   create_table "code_solutions", :force => true do |t|
     t.string   "title"
@@ -23,16 +23,16 @@ ActiveRecord::Schema.define(:version => 20090131222124) do
   create_table "code_statuses", :force => true do |t|
     t.integer  "tests_passed"
     t.integer  "memory_used"
-    t.decimal  "speed"
+    t.integer  "speed",            :limit => 10, :precision => 10, :scale => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "code_solution_id"
+    t.text     "result_output"
   end
 
   create_table "code_tests", :force => true do |t|
     t.string   "title"
     t.text     "description"
-    t.integer  "number_of_tests"
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -12,6 +12,17 @@ class CodeSolutionsController < ApplicationController
   hobo_model_controller
   auto_actions :all, :except => :index
   auto_actions_for :code_test, [:index, :new, :create]
+  
+  def execute
+    @solution = CodeSolution.find_by_id(params[:id])
+    @result = @solution.execute
+    redirect_to :controller => 'code_statuses', :action => 'show', :object => @result
+  end
+end
+
+class CodeStatusesController < ApplicationController
+  hobo_model_controller
+  auto_actions :all
 end
 
 class TestFrameworksController < ApplicationController

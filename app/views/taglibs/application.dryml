@@ -32,7 +32,13 @@
     </header:>
     <body:>
       <div class="code-solution-in-card"><codeview:code /></div>
-      <button>Run Test with This Solution</button>
+	  <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
+	  <%= link_to('Run This With This Solution', :controller => "code_solution", :action => "execute", :id => this.id) %>
     </body:>
   </old-card>
 </extend>
+
+<!-- How do we extend the show page with the results to make an execution page that is dry? -->
+<def tag="execute-page">
+	<show-page for="&@test"/>
+</def>

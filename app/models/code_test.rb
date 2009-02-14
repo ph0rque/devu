@@ -2,6 +2,8 @@ class CodeTest < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
+  include FileUtils
+  
   fields do
     title           :string
     description     :text

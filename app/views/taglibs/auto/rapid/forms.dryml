@@ -3,7 +3,19 @@
 <def tag="form" for="CodeSolution">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="title, code, code_test, user" param/>
+    <field-list fields="title, code, code_statuses, code_test, user" param/>
+    <div param="actions">
+      <submit label="Save" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="CodeStatus">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="result_output, tests_passed, memory_used, speed, code_solution" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>
@@ -15,7 +27,7 @@
 <def tag="form" for="CodeTest">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="title, description, test_body, published, test_framework, user" param/>
+    <field-list fields="title, description, test_body, published, code_solutions, test_framework, user" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>
@@ -27,7 +39,7 @@
 <def tag="form" for="TestFramework">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name" param/>
+    <field-list fields="name, code_tests" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>
@@ -39,7 +51,7 @@
 <def tag="form" for="User">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, email_address, administrator" param/>
+    <field-list fields="name, email_address, administrator, code_solutions, code_tests" param/>
     <div param="actions">
       <submit label="Save" param/><or-cancel param="cancel"/>
     </div>
