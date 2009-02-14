@@ -17,6 +17,9 @@ class CodeTest < ActiveRecord::Base
 
   validates_presence_of :test_framework
   
+  named_scope :published,   :conditions => ['published = ?', true]
+  named_scope :unpublished, :conditions => ['published = ?', false]
+  
   # --- Permissions --- #
 
   def create_permitted?

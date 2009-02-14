@@ -2,6 +2,6 @@
   <content-body:>
     <a class="new-link" action="new" to="&model" />
     <br class="clear-both" />
-    <collection />
+    <collection with="&CodeTest.published" />
   </content-body:>
 </index-page>
