@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20090214145724) do
   create_table "code_statuses", :force => true do |t|
     t.integer  "tests_passed"
     t.integer  "memory_used"
-    t.integer  "speed",            :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "speed"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "code_solution_id"
