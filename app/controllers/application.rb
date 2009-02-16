@@ -16,7 +16,7 @@ class CodeSolutionsController < ApplicationController
   def execute
     @solution = CodeSolution.find_by_id(params[:id])
     @result = @solution.execute
-    redirect_to :controller => 'code_statuses', :action => 'show'
+    redirect_to :controller => 'code_statuses', :action => 'show', :id => @result
   end
 end
 
