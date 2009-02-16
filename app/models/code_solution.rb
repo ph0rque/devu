@@ -1,7 +1,6 @@
 class CodeSolution < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
- 
   include FileUtils
   
   fields do
@@ -34,6 +33,8 @@ class CodeSolution < ActiveRecord::Base
   end
 
   def execute
+    # require 'popen4' install it first: sudo gem install --remote --include-dependencies POpen4
+
     # Create directories if they don't exist for: rails_root / test_execution / id /
     FileUtils.mkdir_p "#{RAILS_ROOT}/test_execution/#{self.id}"
     
@@ -45,20 +46,19 @@ class CodeSolution < ActiveRecord::Base
     file.close
     
     # Invoke the test.rb file with the Ruby interpreter capturing stdout and stderr
-    if self.code_test.test_framework.name == 'Rspec'
-      run `spec test.rb`
-    else
-      run `ruby test.rb`
-    end
+    # if self.code_test.test_framework.name == 'Rspec'
+    #   pid, stdin, stdout, stderr = Open4::popen4("spec test.rb")
+    # else
+    #   pid, stdin, stdout, stderr = Open4::popen4("ruby test.rb")
+    # end
     
     # Delete the rails_root / test_execution / id / directory and it's contents
+    # Do we need to do this?
     
     # Return the output
     cs = CodeStatus.new
-    cs.result_output = 'This should say something else'
+    cs.result_output = "This result will change..." # stdout || stderr
     cs.save!
     return cs
-    
   end
-  
 end
