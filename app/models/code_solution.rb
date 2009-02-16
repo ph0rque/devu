@@ -1,7 +1,9 @@
 class CodeSolution < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
-
+ 
+  include FileUtils
+  
   fields do
     title :string
     code  :text
@@ -36,15 +38,11 @@ class CodeSolution < ActiveRecord::Base
     FileUtils.mkdir_p "#{RAILS_ROOT}/test_execution/#{self.id}"
     
     # Write the test body to a file in: rails_root / test_execution / id / test.rb
-    test_file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/test.rb", "w") 
-    solution_file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/solution.rb", "w") 
+    file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/test.rb", "w") 
     
     # Dump the DB fields to the files
-    test_file.write(self.code_test.test_body)
-    solution_file.write(self.code)
-    
-    test_file.close
-    solution_file.close
+    file.write(self.code_test.test_body + "\n\n" + self.code)
+    file.close
     
     # Invoke the test.rb file with the Ruby interpreter capturing stdout and stderr
     
