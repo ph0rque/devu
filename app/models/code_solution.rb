@@ -41,10 +41,15 @@ class CodeSolution < ActiveRecord::Base
     file = File.new("#{RAILS_ROOT}/test_execution/#{self.id}/test.rb", "w") 
     
     # Dump the DB fields to the files
-    file.write(self.code_test.test_body + "\n\n" + self.code)
+    file.write(self.code + "\n\n" + self.code_test.test_body)
     file.close
     
     # Invoke the test.rb file with the Ruby interpreter capturing stdout and stderr
+    if self.code_test.test_framework.name == 'Rspec'
+      run `spec test.rb`
+    else
+      run `ruby test.rb`
+    end
     
     # Delete the rails_root / test_execution / id / directory and it's contents
     
