@@ -56,6 +56,6 @@ class CodeSolution < ActiveRecord::Base
     # Do we need to do this?
     
     # Return the output
-    self.code_statuses << CodeStatus.create(:result_output => (stdout.read || stderr.read ))
+    self.code_statuses << CodeStatus.create(:result_output => (stderr.read && stdout.read))
   end
 end
