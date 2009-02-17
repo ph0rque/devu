@@ -14,7 +14,7 @@
     </div>
     <br />
     <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-	<%= link_to('Run This Test By Itself', :action => "execute", :id => @code_solution.code_test.id) %>
+  <%= link_to('Run This Test By Itself', :action => "execute", :id => @code_solution.code_test.id) %>
 
     <div class="float-right">
       <a action="edit" if="&can_edit?">Edit Code Solution</a>
@@ -26,6 +26,9 @@
       <codeview:code />
     </div>
     <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-	<%= link_to('Run This With This Solution', :action => "execute", :id => @code_solution.id) %>
+    <%= link_to('Run This With This Solution', :action => "execute", :id => @code_solution.id) %>
+    
+    <h3>Statuses for this Solution</h3>
+    <collection:code_statuses />
   </content-body:>
 </show-page>

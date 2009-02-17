@@ -5,7 +5,6 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
-    <nav-item with="&CodeStatus">Code Statuses</nav-item>
     <nav-item with="&CodeTest">Code Tests</nav-item>
     <nav-item with="&TestFramework">Test Frameworks</nav-item>
   </navigation>
@@ -184,8 +183,6 @@
       
       <section param="content-body">
 
-        <a action="new" to="&model" param="new-link"/>      
-
         <page-nav param="top-page-nav"/>
 
         <collection param/>
@@ -229,8 +226,6 @@
             <h2 param="heading"><name/></h2>
 
             <record-flags fields="" param/>
-
-            <a action="edit" if="&can_edit?" param="edit-link">Edit Code Status</a>
           </header>
     
           <section param="content-body">
@@ -260,6 +255,33 @@
     
   </page>
 </def>
+
+<def tag="index-for-code-solution-page" polymorphic/>
+<def tag="index-for-code-solution-page" for="CodeStatus">
+  <page merge title="Code Statuses for #{name :with => @code_solution, :no_wrapper => true}">
+    <body: class="index-for-owner-page code-solution code-status" param/>
+    
+    <content: param>
+      <header param="content-header">
+        <div param="back-to">Back to <a with="&@code_solution"/></div>
+        <h2 param="heading">Code Statuses</h2>
+        <h3 param="subheading">For: <a with="&@code_solution"/></h3>
+        <p param="count" if>There <count prefix="are"/></p>
+      </header>
+      
+      <section param="content-body">
+
+        <page-nav param="top-page-nav"/>
+      
+        <collection param/>
+      
+        <page-nav param="bottom-page-nav"/>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
 
 
 

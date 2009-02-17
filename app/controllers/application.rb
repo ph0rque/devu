@@ -22,7 +22,8 @@ end
 
 class CodeStatusesController < ApplicationController
   hobo_model_controller
-  auto_actions :all
+  auto_actions [:show, :destroy]
+  auto_actions_for :code_solution, :index
 end
 
 class TestFrameworksController < ApplicationController

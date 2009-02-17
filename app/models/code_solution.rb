@@ -52,10 +52,14 @@ class CodeSolution < ActiveRecord::Base
       pid, stdin, stdout, stderr = Open4::popen4("ruby #{RAILS_ROOT}/test_execution/#{self.id}/test.rb")
     end
     
+    ignored, status = Process::waitpid2(pid)
+
+    output = [pid, stderr.read, stdout.read, status.inspect, status.exitstatus].join("\n")
+    
     # Delete the rails_root / test_execution / id / directory and it's contents
     # Do we need to do this?
     
     # Return the output
-    self.code_statuses << CodeStatus.create(:result_output => (stderr.read && stdout.read))
+    self.code_statuses << CodeStatus.create(:result_output => output )
   end
 end

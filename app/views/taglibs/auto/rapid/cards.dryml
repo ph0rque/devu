@@ -15,7 +15,7 @@
 <def tag="card" for="CodeStatus">
   <card class="code-status" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
   </card>
 </def>
