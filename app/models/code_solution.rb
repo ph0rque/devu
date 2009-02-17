@@ -33,7 +33,7 @@ class CodeSolution < ActiveRecord::Base
   end
 
   def execute
-    require 'popen4'
+    require 'open4'
 
     # Create directories if they don't exist for: rails_root / test_execution / id /
     FileUtils.mkdir_p "#{RAILS_ROOT}/test_execution/#{self.id}"
@@ -47,16 +47,15 @@ class CodeSolution < ActiveRecord::Base
     
     # Invoke the test.rb file with the Ruby interpreter capturing stdout and stderr
     if self.code_test.test_framework.name == 'Rspec'
-      pid, stdin, stdout, stderr = Open4::popen4("spec test.rb")
+      pid, stdin, stdout, stderr = Open4::popen4("spec #{RAILS_ROOT}/test_execution/#{self.id}/test.rb")
     else
-      pid, stdin, stdout, stderr = Open4::popen4("ruby test.rb")
+      pid, stdin, stdout, stderr = Open4::popen4("ruby #{RAILS_ROOT}/test_execution/#{self.id}/test.rb")
     end
     
     # Delete the rails_root / test_execution / id / directory and it's contents
     # Do we need to do this?
     
     # Return the output
-    cs = self.code_statuses << CodeStatus.create(:result_output => (stdout || stderr))
-    return cs.result_output
+    self.code_statuses << CodeStatus.create(:result_output => (stdout.read || stderr.read ))
   end
 end
