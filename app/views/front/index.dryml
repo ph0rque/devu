@@ -6,11 +6,23 @@
     <header class="content-header">
       <h1>Welcome to <app-name/></h1>
       <section class="welcome-message">
-        <h3>We'll need to think of something to put here, or get rid of the front page entirely.</h3>
+        <h3>DevU is a place to write code tests, and code solutions to those tests.</h3>
       </section>
     </header>
-
+    
     <section class="content-body">
+      
+      <section-group>
+        <section class="front-groups">
+          <h3 class="heading">Recent Code Solutions</h3>
+          <collection with="&CodeSolution.recent"/>
+        </section>
+        
+        <section class="with-left-margin front-groups">
+          <preview-with-more name="Unpublished Code Tests" with="&CodeTest.unpublished"/>
+        </section>
+      </section-group>
+        
     </section>
   </content:>
   

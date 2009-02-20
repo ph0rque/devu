@@ -51,11 +51,8 @@ class CodeSolution < ActiveRecord::Base
     else
       pid, stdin, stdout, stderr = Open4::popen4("ruby #{RAILS_ROOT}/test_execution/#{self.id}/test.rb")
     end
-    
-    ignored, status = Process::waitpid2(pid)
-
-    output = [pid, stderr.read, stdout.read, status.inspect, status.exitstatus].join("\n")
-    
+    output = stderr.read || stdout.read
+        
     # Delete the rails_root / test_execution / id / directory and it's contents
     # Do we need to do this?
     
