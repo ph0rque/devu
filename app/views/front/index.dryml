@@ -17,12 +17,7 @@
           <h3 class="heading">Recent Code Solutions</h3>
           <collection with="&CodeSolution.recent"/>
         </section>
-        
-        <section class="with-left-margin front-groups">
-          <preview-with-more name="Unpublished Code Tests" with="&CodeTest.unpublished"/>
-        </section>
       </section-group>
-        
     </section>
   </content:>
   

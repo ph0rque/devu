@@ -16,7 +16,7 @@ class CodeSolution < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    user_is?(acting_user)
+    (user_is?(acting_user) && self.code_test.published?) || acting_user.administrator?
   end
  
   def update_permitted?
@@ -51,7 +51,7 @@ class CodeSolution < ActiveRecord::Base
     else
       pid, stdin, stdout, stderr = Open4::popen4("ruby #{RAILS_ROOT}/test_execution/#{self.id}/test.rb")
     end
-    output = stderr.read || stdout.read
+    output = stderr.read && stdout.read
         
     # Delete the rails_root / test_execution / id / directory and it's contents
     # Do we need to do this?
