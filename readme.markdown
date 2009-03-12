@@ -6,26 +6,46 @@ DevU is a place to write code tests, and code solutions to those tests.
 To Do
 -----
  
-☑ Finish the CodeTest#index view 
+☑ Finish the CodeTest#index view
+
 ☑ make only CodeTest New button right-floating
+
 ☑ CodeTest#show view 
+
 ☑ Fix showing code\_body bug
+
 ☑ CodeSolution#show view
+
 ☑ Preserve whitespace
+
 ☑ figure out why the < new-link: > doesn't work 
+
 ☑ limit unwanted choices
+
 ☑ figure out how to remove unintentional < br />'s with < pre > tags  
+
 ☑ add actual testing abilities 
+
 ☑ get error messages captured (heroku eats stderr for rspec.... )  
+
 ☑ decide what to do with front page and top navigation
+
 ☐ add code\_test view to new and edit forms of code\_solutions  
+
 ☐ add greyed-out css classes to unpublished tests  
+
 ☐ factor out the execute method into its own module in the lib  
+
 ☐ add syntax highlighting Rails plugin (http://github.com/arya/tm_syntax_highlighting/tree/master)  
+
 ☐ in CodeTest#new, change the "No Test Framework" to "Please choose a Framework"  
+
 ☐ Add pageviews to CodeTests  
+
 ☐ Add polymorphic comments and votes to CodeTests, CodeSolutions, and possibly TestFramewoks  
+
 ☐ line up button and link on CodeTest#show
+
 ☐ make hidden divs with test statuses (created on after\_save)  
 
 License
