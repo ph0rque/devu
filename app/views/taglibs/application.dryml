@@ -1,13 +1,13 @@
 <include src="rapid" plugin="hobo"/>
-
+ 
 <include src="taglibs/auto/rapid/cards"/>
 <include src="taglibs/auto/rapid/pages"/>
 <include src="taglibs/auto/rapid/forms"/>
-
+ 
 <set-theme name="clean"/>
-
+ 
 <def tag="app-name">DevU</def>
-
+ 
 <def tag="codeview">
   <div class="code"><pre><%= h(this) -%></pre></div>
 </def>
@@ -24,7 +24,7 @@
       </i></small>
   </old-card>
 </extend>
-
+ 
 <extend tag="card" for="CodeSolution">
   <old-card merge>
     <header:>
@@ -32,12 +32,11 @@
     </header:>
     <body:>
       <div class="code-solution-in-card"><codeview:code /></div>
-      <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-      <%= link_to('Run This With This Solution', :controller => "code_solution", :action => "execute", :id => this.id) %>
+      <%= link_to('Run This Test With This Solution', :controller => "code_solution", :action => "execute", :id => this.id) %>
     </body:>
   </old-card>
 </extend>
-
+ 
 <extend tag="card" for="CodeStatus">
   <old-card meger>
     <header: param>
