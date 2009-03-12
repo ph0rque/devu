@@ -13,20 +13,18 @@
       <codeview:code_test.test_body />
     </div>
     <br />
-    <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-    <%= link_to('Run This Test By Itself', :action => "execute", :id => @code_solution.code_test.id) %>
-
+   <a>Run This Test By Itself (Doesn't work yet)</a>
+ 
     <div class="float-right">
       <a action="edit" if="&can_edit?">Edit Code Solution</a>
     </div><br />
-
+ 
     <h2><view:title /></h2>
     <i>by <a:user /> on <view:updated_at.to_date /></i>
     <div class="code-solution-section">
       <codeview:code />
     </div>
-    <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-    <%= link_to('Run This With This Solution', :action => "execute", :id => @code_solution.id) %>
+    <%= link_to('Run This Test With This Solution', :action => "execute", :id => @code_solution.id) %>
     
     <h3>Statuses for this Solution</h3>
     <collection:code_statuses />
