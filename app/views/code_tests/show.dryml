@@ -18,8 +18,7 @@
     <div class="float-right"><a:code_solutions action="new" if="&can_create?(@code_test.code_solutions)">
       write a new code solution for this test
     </a></div>
-    <!-- Why this no work?? <a action="execute">Run This Test By Itself</a> -->
-	<%= link_to('Run This Test By Itself', :action => "execute", :id => @code_test.id) %>
+    <a>Run This Test By Itself (Doesn't work yet)</a>
     
     <h3>Code Solutions for This Test</h3>
     <collection:code_solutions />
