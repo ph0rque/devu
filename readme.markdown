@@ -1,32 +1,32 @@
 DevU
 ====
  
-Description here.
+DevU is a place to write code tests, and code solutions to those tests.
  
 To Do
 -----
  
-<strike>Finish the CodeTest#index view</strike>  
-<strike>make only CodeTest New button right-floating</strike>  
-<strike>CodeTest#show view</strike>  
-<strike>Fix showing code\_body bug</strike>  
-<strike>CodeSolution#show view</strike>  
-<strike>Preserve whitespace</strike>  
-<strike>figure out why the < new-link: > doesn't work</strike>  
-<strike>limit unwanted choices</strike>  
-<strike>figure out how to remove unintentional < br />'s with < pre > tags</strike>  
-<strike>add actual testing abilities</strike>  
-<strike>get error messages captured</strike> (heroku eats stderr for rspec.... )  
-<strike>decide what to do with front page and top navigation</strike>  
-add code\_test view to new and edit forms of code\_solutions  
-add greyed-out css classes to unpublished tests  
-factor out the execute method into its own module in the lib  
-add syntax highlighting Rails plugin (http://github.com/arya/tm_syntax_highlighting/tree/master)  
-in CodeTest#new, change the "No Test Framework" to "Please choose a Framework"  
-Add pageviews to CodeTests  
-Add polymorphic comments and votes to CodeTests, CodeSolutions, and possibly TestFramewoks  
-line up button and link on CodeTest#show
-make hidden divs with test statuses (created on after\_save)  
+☑ Finish the CodeTest#index view 
+☑ make only CodeTest New button right-floating
+☑ CodeTest#show view 
+☑ Fix showing code\_body bug
+☑ CodeSolution#show view
+☑ Preserve whitespace
+☑ figure out why the < new-link: > doesn't work 
+☑ limit unwanted choices
+☑ figure out how to remove unintentional < br />'s with < pre > tags  
+☑ add actual testing abilities 
+☑ get error messages captured (heroku eats stderr for rspec.... )  
+☑ decide what to do with front page and top navigation
+☐ add code\_test view to new and edit forms of code\_solutions  
+☐ add greyed-out css classes to unpublished tests  
+☐ factor out the execute method into its own module in the lib  
+☐ add syntax highlighting Rails plugin (http://github.com/arya/tm_syntax_highlighting/tree/master)  
+☐ in CodeTest#new, change the "No Test Framework" to "Please choose a Framework"  
+☐ Add pageviews to CodeTests  
+☐ Add polymorphic comments and votes to CodeTests, CodeSolutions, and possibly TestFramewoks  
+☐ line up button and link on CodeTest#show
+☐ make hidden divs with test statuses (created on after\_save)  
 
 License
 -------
